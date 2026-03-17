@@ -1,7 +1,7 @@
 local playerName = "Abhishek"
-local playerMoney = -10
+local playerMoney = 10
 local playerJob = "Trucker"
-local playerLevel = 5
+local playerLevel = 10
 local playerAlive = true
 
 -- print("Player Name: " .. playerName)
@@ -31,3 +31,14 @@ local playerAlive = true
 -- Agar playerLevel >= 10 → "Pro Player"
 -- Agar playerLevel >= 5 → "Intermediate Player"
 -- warna → "Beginner Player"
+
+
+-- if playerLevel >= 0 and playerLevel < 5 then
+--     print("Beginner Player")
+-- elseif playerLevel >= 5 and playerLevel < 10 then
+--     print("Intermediate Player")
+-- elseif playerLevel >= 10 then
+--     print("Pro Player")
+-- else
+--     print("Not Valid Level Value")
+-- end
