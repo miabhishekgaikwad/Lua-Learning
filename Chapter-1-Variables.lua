@@ -25,3 +25,9 @@ local playerAlive = true
 --         print('Somthing Went Wrong')
 --     end
 -- end
+
+
+
+-- Agar playerLevel >= 10 → "Pro Player"
+-- Agar playerLevel >= 5 → "Intermediate Player"
+-- warna → "Beginner Player"
