@@ -5,7 +5,7 @@
 local playerName = "Rohit"  -- string
 local playerMoney = 5000    -- number
 local isPlayerAlive = false -- boolean
-local playerJob = "job"     -- nil (job assigned nahi hai)
+local playerJob = nil        -- nil (job assigned nahi hai)
 
 
 -- print("Player Money: " .. type(playerMoney))
@@ -22,3 +22,18 @@ local playerJob = "job"     -- nil (job assigned nahi hai)
 -- else
 --     print("No Job")
 -- end
+
+
+-- Agar playerJob == "police" → "Police Officer"
+-- Agar playerJob == "ambulance" → "Medic"
+-- warna → "Unemployed"
+
+
+    -- if playerJob == "police" then
+    --     print("Player Job: Police Officer")
+    -- elseif playerJob == "ambulance" then
+    --     print("Player Job: Medic")
+    -- else
+    --     print("Player is a Unemployed")
+    -- end
+
