@@ -60,3 +60,27 @@ local playerJob = nil       -- nil (job assigned nahi hai)
 -- Agar playerMoney > 10000 → "VIP Player"
 -- Agar playerMoney > 5000 → "Premium Player"
 -- warna → "Normal Player"
+
+
+-- if type(playerMoney) ~= "number" then
+--     print("Not Valid Type")
+--     return
+-- else
+--     if playerMoney < 0 then
+--         print("Player has negative balance")
+--     elseif playerMoney > 10000 then
+--         print("VIP Player")
+--     elseif playerMoney > 5000 then
+--         print("Premium Player")
+--     else
+--         print("Normal Player")
+--     end
+-- end
+
+
+-- Agar playerMoney < 0 → "Hacker Detected"
+-- Agar playerMoney > 50000 → "Ultra Rich"
+-- Agar playerMoney > 10000 → "VIP"
+-- Agar playerMoney > 5000 → "Premium"
+-- warna → "Normal"
+
