@@ -3,7 +3,7 @@
 
 
 local playerName = "Rohit"  -- string
-local playerMoney = 5000    -- number
+local playerMoney = -50000    -- number
 local playerLevel = 1       -- number
 local isPlayerAlive = false -- boolean
 local playerJob = nil       -- nil (job assigned nahi hai)
@@ -84,3 +84,20 @@ local playerJob = nil       -- nil (job assigned nahi hai)
 -- Agar playerMoney > 5000 → "Premium"
 -- warna → "Normal"
 
+
+if type(playerMoney) ~= "number" then
+    print("Not Valid Type")
+    return
+end
+
+if playerMoney < 0 then
+    print("Hacker Detected")
+elseif playerMoney > 50000 then
+    print("Ultra Rich")
+elseif playerMoney > 10000 then
+    print("VIP")
+elseif playerMoney > 5000 then
+    print("Premium")
+else
+    print("Normal")
+end
