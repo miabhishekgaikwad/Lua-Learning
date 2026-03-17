@@ -1,8 +1,8 @@
 local playerName = "Abhishek"
-local playerMoney = 10
+local playerMoney = 10000
 local playerJob = "Trucker"
 local playerLevel = 10
-local playerAlive = true
+local playerAlive = false
 
 -- print("Player Name: " .. playerName)
 -- print("Player Money: " .. playerMoney)
@@ -42,3 +42,16 @@ local playerAlive = true
 -- else
 --     print("Not Valid Level Value")
 -- end
+
+-- Agar playerAlive = true aur playerMoney > 1000 → "Active Rich Player"
+-- Agar playerAlive = true → "Active Player"
+-- warna → "Dead Player"
+
+if playerAlive == true and playerMoney > 1000 then
+    print("Active Rich Player")
+elseif playerAlive then
+    print("Active Player")
+else
+    print("Dead Player")
+
+end
