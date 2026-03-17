@@ -24,7 +24,32 @@
 
 
 local function canEnterArea(level, requiredLevel)
-    if type(level) ~= "number" and type(requiredLevel) ~= "number" then
+    if type(level) ~= "number" then
         return false
     end
+    
+    if  type(requiredLevel) ~= "number" then
+        return false
+        
+    end
+    if  requiredLevel < 0 then
+        return false
+        
+    end
+    if  level < 0 then
+        return false
+        
+    end
+
+    if level >= requiredLevel then
+        return true
+    else
+        return false
+    end
+
 end
+
+
+
+
+print(canEnterArea(1,-10))
