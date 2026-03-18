@@ -53,23 +53,3 @@
 -- print(canEnterArea(10, 10))
 
 
-
--- STEP 7 — 🧪 Practice Challenge
-
--- 👉 Ek function likho:
-
--- function name: canStartJob
-
--- Conditions:
-
--- player level ≥ 5
-
--- player ke paas job license ho
-
--- player banned na ho
-
--- 👉 Output:
-
--- true → allowed
-
--- false → denied
