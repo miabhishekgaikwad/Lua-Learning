@@ -1,13 +1,21 @@
 
-# Lua Learning Log
+# Lua Learning
 
 This repository is a personal log of my journey learning the Lua programming language. All code here is written by me while practicing and exploring Lua concepts, syntax, and problem-solving. The content is meant for educational and self-improvement purposes.
 
 ## What You'll Find
 
-- **Practice Code:** Solutions to exercises and challenges I attempted while learning.
-- **Examples:** Simple scripts demonstrating Lua basics, functions, operators, and more.
-- **Notes:** Comments and explanations to help me (and others) understand the logic.
+- **Practice Code:** Solutions to exercises and challenges for each Lua concept.
+- **Examples:** Scripts covering variables, data types, control flow, operators, functions, and more.
+- **Notes:** Comments and explanations for clarity.
+- **Chapters:**
+	- Chapter 1: Variables
+	- Chapter 2: Data Types
+	- Chapter 3: If/Else
+	- Chapter 4: Comparison Operators
+	- Chapter 5: Logical Operators
+	- Chapter 6: Functions
+	- Chapter 7: Local vs Global Variables
 
 ## How to Use
 
