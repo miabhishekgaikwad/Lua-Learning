@@ -123,3 +123,8 @@
 -- safe access hona chahiye
 
 
+local player = {}
+
+local function getPlayerField(playerId,field)
+    
+end
