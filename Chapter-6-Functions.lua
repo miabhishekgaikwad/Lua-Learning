@@ -48,7 +48,7 @@
 --         return false
 --         else return true
 --     end
-    
+
 -- end
 
 
@@ -93,3 +93,34 @@
 -- 🔁 Return:
 -- true, "Success"
 -- false, "Reason"
+
+
+
+local function processPurchase(player, money, price, isBlacklisted)
+    if type(player) ~= "table" or type(price) ~= "number" or type(money) ~= "number" then
+        return false, 'Invalid Type'
+    end
+
+    if type(isBlacklisted) ~= "boolean" or  isBlacklisted then
+        return false, "reject"
+    end
+
+    if money < 0 or price <= 0 or price > 100000 then
+        return false, 'Invalid'
+    end
+
+    if money < price then
+        return false, "You Don't Have " .. price
+    else
+        return true, "Success"
+    end
+end
+
+
+local player = {
+    name = "Abhishek",
+    money = 5000,
+    isBlacklisted = false,
+}
+
+print(processPurchase(player, player.money, 51000,player.isBlacklisted))
