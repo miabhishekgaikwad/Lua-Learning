@@ -62,56 +62,58 @@
 
 
 
--- local Players = {}
+local Players = {}
 
--- local function addPlayer(playerId)
---     if type(playerId) ~= "number" then
---         return false
---     end
+local function addPlayer(playerId)
+    if type(playerId) ~= "number" then
+        return false
+    end
 
---     if playerId < 1 then
---         return false
---     end
+    if playerId < 1 then
+        return false
+    end
 
---     if Players[playerId] then
---         return false, "Player already exists"
---     end
+    if Players[playerId] then
+        return false, "Player already exists"
+    end
 
---     Players[playerId] = {
---         money = 0,
---         level = 0,
---         job = 'none'
---     }
+    Players[playerId] = {
+        money = 0,
+        level = 0,
+        job = 'none'
+    }
 
---     print(Players[playerId].money)
---     print(Players[playerId].level)
---     print(Players[playerId].job)
+    print(Players[playerId].money)
+    -- print(Players[playerId].level)
+    -- print(Players[playerId].job)
 
---     return true
--- end
+    return true
+end
 
--- local function addMoney(playerId, amount)
---     if type(playerId) ~= "number" or type(amount) ~= "number" then
---         return false
---     end
---     if playerId < 1 or amount < 1 then
---         return false
---     end
+local function addMoney(playerId, amount)
+    if type(playerId) ~= "number" or type(amount) ~= "number" then
+        return false
+    end
+    if playerId < 1 or amount < 1 then
+        return false
+    end
 
-    
---     if not Players[playerId] then
---         return false
---     end
-    
---     Players[playerId].money = Players[playerId].money + amount
---     print(Players[playerId].money)
---     return true
--- end
 
--- addPlayer(1)
--- addPlayer(2)
--- addMoney(1, 1400)
--- addMoney(2, 10400)
+    if not Players[playerId] then
+        return false
+    end
+
+    Players[playerId].money = Players[playerId].money + amount
+    print(Players[playerId].money)
+    return true
+end
+
+addPlayer(1)
+addPlayer(2)
+addMoney(1, 1400)
+addMoney(2, 10400)
+
+
 -- -- print(Players[2].money)
 
 
@@ -130,4 +132,22 @@
 
 -- return true/false + message
 
-local 
+
+local function removePlayer(playerId)
+    if type(playerId) ~= "number" then
+        return
+    end
+
+    if type(Players) ~= "table" then
+        return
+    end
+
+    if Players[playerId] then
+        Players[playerId] = nil
+        return true, "player exist an remove."
+    else
+        return false, "player not exist."
+    end
+end
+
+print(removePlayer(1))
