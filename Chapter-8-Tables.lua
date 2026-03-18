@@ -62,41 +62,72 @@
 
 
 
-local Players = {}
+-- local Players = {}
 
-local function addPlayer(playerId)
-    if type(playerId) ~= "number" then
-        return false
-    end
-    if playerId < 1 then
-        return false
-    end
-    Players[playerId] = {
-        money = 0,
-        level = 0,
-        job = 'none'
-    }
+-- local function addPlayer(playerId)
+--     if type(playerId) ~= "number" then
+--         return false
+--     end
 
-    print(Players[playerId].money)
-    print(Players[playerId].level)
-    print(Players[playerId].job)
-end
+--     if playerId < 1 then
+--         return false
+--     end
 
-local function addMoney(playerId, amount)
-    if type(playerId) ~= "number" or type(amount) ~= "number" then
-        return false
-    end
-    if playerId < 1 or amount < 1 then
-        return false
-    end
+--     if Players[playerId] then
+--         return false, "Player already exists"
+--     end
 
-    addPlayer(playerId)
+--     Players[playerId] = {
+--         money = 0,
+--         level = 0,
+--         job = 'none'
+--     }
+
+--     print(Players[playerId].money)
+--     print(Players[playerId].level)
+--     print(Players[playerId].job)
+
+--     return true
+-- end
+
+-- local function addMoney(playerId, amount)
+--     if type(playerId) ~= "number" or type(amount) ~= "number" then
+--         return false
+--     end
+--     if playerId < 1 or amount < 1 then
+--         return false
+--     end
+
     
-    if not Players[playerId] then
-        return false
-    end
-
+--     if not Players[playerId] then
+--         return false
+--     end
     
-end
+--     Players[playerId].money = Players[playerId].money + amount
+--     print(Players[playerId].money)
+--     return true
+-- end
 
-addMoney(1, 500)
+-- addPlayer(1)
+-- addPlayer(2)
+-- addMoney(1, 1400)
+-- addMoney(2, 10400)
+-- -- print(Players[2].money)
+
+
+-- 💪 Mini Challenge (Next Level)
+
+
+-- 👉 Function:
+
+-- removePlayer(playerId)
+
+-- Conditions:
+
+-- player exist karta ho
+
+-- remove karo safely
+
+-- return true/false + message
+
+local 
