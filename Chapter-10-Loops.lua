@@ -81,3 +81,51 @@
 -- end
 
 
+
+
+-- 🧪 Practice Upgrade (Real Dev Level 🔥)
+
+-- 👉 Ab thoda realistic system banao:
+
+-- Task:
+
+-- hunger = 100
+
+-- har 1 second me 10 kam
+
+-- agar hunger <= 30:
+
+-- print "Low hunger warning"
+
+-- agar hunger <= 0:
+
+-- print "Player starving"
+
+-- loop stop
+
+-- 💡 Expected:
+
+-- Hunger: 30 → warning
+-- Hunger: 0 → starving
+
+
+
+-- local playerHunger = 100
+
+-- while playerHunger > 0 do
+--     if playerHunger == 30 then
+--         print("Low hunger warning")
+--     end
+--     playerHunger = playerHunger - 10
+
+--     print(playerHunger)
+--     if playerHunger == 0 then
+--         print("Player starving")
+--     end
+-- end
+
+
+
+
+
+
